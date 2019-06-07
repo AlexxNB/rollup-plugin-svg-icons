@@ -1,10 +1,11 @@
 {
   "name": "rollup-plugin-svg-icons",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Bundles all svg icons from the speciefed folder to the single spritesheet svg file",
-  "main": "dist/index.esm.min.js",
+  "main": "dist/index.min.js",
+  "module": "dist/index.esm.min.js",
   "scripts": {
-    "build": "bili --format es-min",
+    "build": "bili --format cjs-min --format es-min",
     "test": "rollup -c test/rollup.config.js"
   },
   "repository": {
@@ -18,6 +19,9 @@
       "icons",
       "sprite"
   ],
+  "files": [
+    "dist"
+  ],  
   "author": "Alexey Schebelev",
   "license": "MIT",
   "bugs": {

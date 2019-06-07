@@ -1,4 +1,4 @@
-import svgicons from './../dist/index.esm.min';
+import svgicons from './../dist/index.esm.min.js';
 
 
 export default {
