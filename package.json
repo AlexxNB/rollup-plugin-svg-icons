@@ -1,0 +1,29 @@
+{
+  "name": "rollup-plugin-svg-icons",
+  "version": "1.0.0",
+  "description": "Bundles all svg icons from the speciefed folder to the single spritesheet svg file",
+  "main": "dist/index.esm.min.js",
+  "scripts": {
+    "build": "bili --format esm-min",
+    "test": "rollup -c test/rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexxNB/rollup-plugin-svg-icons.git"
+  },
+  "author": "Alexey Schebelev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexxNB/rollup-plugin-svg-icons/issues"
+  },
+  "homepage": "https://github.com/AlexxNB/rollup-plugin-svg-icons#readme",
+  "devDependencies": {
+    "bili": "^4.8.0",
+    "rollup": "^1.14.4"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "html-minifier": "^4.0.0",
+    "pretty": "^2.0.0"
+  }
+}
