@@ -35,6 +35,8 @@ export default {
 
 ## Usage in HTML
 
+Use href `bundle.svg#iconid` where `iconid` is base part of svg-icon filename. For ex. if in source folder you have `myicon.svg` then you should use `bandle.svg#myicon`:
+
 ```html
 <style>
 .inline-svg-icon{
