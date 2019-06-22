@@ -32,7 +32,11 @@ export default [
 			svgicons({
 				...defaults,
 				output: 'test/bundle-svgo.svg',
-				svgo: {}
+				svgo: {
+					plugins: [{
+						removeViewBox: false
+					}]
+				}
 			})
 		]
 	}
