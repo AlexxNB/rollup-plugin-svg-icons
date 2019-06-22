@@ -49,9 +49,7 @@ export default function svgicons(options = {}) {
       });
             
       if (symbols.length > 0) {
-        const outputFolderPath = options.outputFolder || path.dirname(details.file)
-
-        fs.writeFileSync(path.resolve(output), createSprite(symbols, minify))
+        fs.writeFileSync(path.resolve(output), createSprite(symbols, minify));
       }
     }
   }
