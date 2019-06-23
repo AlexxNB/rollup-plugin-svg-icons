@@ -38,11 +38,11 @@ export default function svgicons(options = {}) {
   const output = options.output || 'dist/bundle.svg';
   const svgo = options.svgo && new SVGO(options.svgo);
 
-  let symbols = [];
-
   return {
     name: 'svelte-svgicons',
     generateBundle: async () => {
+      let symbols = [];
+
       const icons_dir = path.resolve(inputFolder);
       for (const file of fs.readdirSync(icons_dir)) {
         const svgid = path.parse(file).name
@@ -53,7 +53,7 @@ export default function svgicons(options = {}) {
           const { data } = await svgo.optimize(code, { path: filepath })
           code = data;
         }
-        
+
         symbols = [...symbols, createSymbol(svgid, code)];
       }
 
