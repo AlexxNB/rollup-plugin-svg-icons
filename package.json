@@ -6,7 +6,8 @@
   "module": "dist/index.esm.min.js",
   "scripts": {
     "build": "bili --format cjs-min --format es-min",
-    "test": "rollup -c test/rollup.config.js"
+    "test": "rollup -c test/rollup.config.js",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
