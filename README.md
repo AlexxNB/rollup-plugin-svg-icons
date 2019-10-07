@@ -2,6 +2,8 @@
 
 Bundles all svg icons from the speciefed folder to the single spritesheet svg file.
 
+[![npm](https://img.shields.io/npm/v/rollup-plugin-svg-icons)](https://www.npmjs.com/package/rollup-plugin-svg-icons)   [![npm](https://img.shields.io/npm/dt/rollup-plugin-svg-icons)](https://www.npmjs.com/package/rollup-plugin-svg-icons)    [![](https://github.com/AlexxNB/rollup-plugin-svg-icons/workflows/Publish%20on%20NPM/badge.svg)](https://github.com/AlexxNB/rollup-plugin-svg-icons/actions?workflow=Publish+on+NPM) 
+
 ## Installation
 
 ```bash
