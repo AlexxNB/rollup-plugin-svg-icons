@@ -5,39 +5,37 @@ const baseConfig = {
 	output: {
 		format: 'iife',
 		name: 'app',
-		file: 'test/bundle.js'
+		file: 'test/output/bundle.js'
 	}
 }
 
-const defaults = {
+const test1 = {
 	inputFolder: 'test/icons',
-	output: 'test/bundle.svg',
-	minify: false
+	output: 'test/output/sprite-test1.svg',
+	svgo: false
+}
+
+const test2 = {
+	inputFolder: 'test/icons',
+	output: 'test/output/sprite-test2.svg',
+	svgo: {
+		plugins: [{
+			removeViewBox: false
+		}]
+	}
 }
 
 export default [
 	{
 		...baseConfig,
 		plugins: [
-			svgicons(defaults)
+			svgicons(test1)
 		]
 	},
 	{
 		...baseConfig,
-		output: {
-			...baseConfig.output,
-			file: 'test/bundle-svgo.js' // to differ from bundle (w/o svg) in the console
-		},
 		plugins: [
-			svgicons({
-				...defaults,
-				output: 'test/bundle-svgo.svg',
-				svgo: {
-					plugins: [{
-						removeViewBox: false
-					}]
-				}
-			})
+			svgicons(test2)
 		]
 	}
 ];

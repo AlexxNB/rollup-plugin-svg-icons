@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test page for generated sprite</title>
+	</head>
+		<style>
+
+			.inline-svg-icon {
+				display: inline-block;
+				width: 48px;
+				height: 48px;
+				fill: currentColor;
+				vertical-align: middle;
+			}
+
+			td,th{
+				text-align: center;
+				border: 1px solid black;
+				padding: 10px;
+			}
+
+			table{
+				border-collapse: collapse;
+				border: 1px solid black;
+			}
+
+			.red > td{
+				color:red;
+			}
+		</style> 
+	<body>
+
+		<table>
+			<tr>
+				<th>Stage</th>
+				<th>Android</th>
+				<th>Android(plain)</th>
+				<th>Bower</th>
+				<th>Bower(plain)</th>
+				<th>Chrome</th>
+				<th>Chrome(plain)</th>
+				<th>Firefox</th>
+				<th>Firefox(plain)</th>
+				<th>Gitlab</th>
+				<th>Gitlab(plain)</th>
+				<th>Linux</th>
+				<th>Linux(plain)</th>
+				<th>PHP</th>
+				<th>PHP(plain)</th>
+			</tr>
+
+			<tr>
+				<td>Original</td>
+				<td><img src="icons/android.svg" width="48" height="48"/></td>
+				<td><img src="icons/android-plain.svg" width="48" height="48"/></td>
+				<td><img src="icons/bower.svg" width="48" height="48"/></td>
+				<td><img src="icons/bower-plain.svg" width="48" height="48"/></td>
+				<td><img src="icons/chrome.svg" width="48" height="48"/></td>
+				<td><img src="icons/chrome-plain.svg" width="48" height="48"/></td>
+				<td><img src="icons/firefox.svg" width="48" height="48"/></td>
+				<td><img src="icons/firefox-plain.svg" width="48" height="48"/></td>
+				<td><img src="icons/gitlab.svg" width="48" height="48"/></td>
+				<td><img src="icons/gitlab-plain.svg" width="48" height="48"/></td>
+				<td><img src="icons/linux.svg" width="48" height="48"/></td>
+				<td><img src="icons/linux-plain.svg" width="48" height="48"/></td>
+				<td><img src="icons/php.svg" width="48" height="48"/></td>
+				<td><img src="icons/php-plain.svg" width="48" height="48"/></td>
+			</tr>
+
+
+			<tr>
+				<td>Sprite</td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#android"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#android-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#bower"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#bower-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#chrome"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#chrome-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#firefox"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#firefox-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#gitlab"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#gitlab-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#linux"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#linux-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#php"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#php-plain"></use></svg></td>
+			</tr>
+
+			<tr class="red">
+				<td>Sprite red</td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#android"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#android-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#bower"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#bower-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#chrome"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#chrome-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#firefox"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#firefox-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#gitlab"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#gitlab-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#linux"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#linux-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#php"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test1.svg#php-plain"></use></svg></td>
+			</tr>
+
+			<tr>
+				<td>Sprite (SVGO)</td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#android"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#android-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#bower"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#bower-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#chrome"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#chrome-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#firefox"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#firefox-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#gitlab"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#gitlab-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#linux"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#linux-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#php"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#php-plain"></use></svg></td>
+			</tr>
+
+			<tr class="red">
+				<td>Sprite red (SVGO)</td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#android"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#android-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#bower"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#bower-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#chrome"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#chrome-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#firefox"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#firefox-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#gitlab"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#gitlab-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#linux"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#linux-plain"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#php"></use></svg></td>
+				<td><svg class="inline-svg-icon"><use xlink:href="output/sprite-test2.svg#php-plain"></use></svg></td>
+			</tr>
+
+
+		</table>
+		<script defer src="./output/bundle.js" type="text/javascript"></script>
+	</body>
+</html>
