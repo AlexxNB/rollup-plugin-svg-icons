@@ -56,8 +56,12 @@ Use href `bundle.svg#iconid` where `iconid` is base part of svg-icon filename. F
 </svg>
 ```
 
+## Restrictions
+
+Icons with gradients or some types of complex shapes will not be packed in the sprite correctly.
+
 ## Inspiration
-Some ideas were peeped from [vladshcherbin](https://github.com/vladshcherbin/rollup-plugin-svg-sprite)
+Plugin based on [svgstore](https://www.npmjs.com/package/svgstore) package.
 
 ## License
 MIT
