@@ -24,9 +24,6 @@ export default {
       // path for the sprite file
       output: 'dist/bundle.svg', // it is default value
 
-      // output file minification
-      minify: true, // default value is 'false'
-
       // by default svgo is disabled, to turn it on - pass config object (or just empty object)
       svgo: { /* config */ }, 
     })
