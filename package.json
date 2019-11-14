@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-svg-icons",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Bundles all svg icons from the speciefed folder to the single spritesheet svg file",
   "main": "dist/index.min.js",
   "module": "dist/index.esm.min.js",
@@ -37,7 +37,6 @@
     "sirv-cli": "^0.4.4"
   },
   "dependencies": {
-    "svgo": "^1.3.0",
     "svgstore": "^3.0.0-2"
   }
 }

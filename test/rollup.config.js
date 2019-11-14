@@ -11,18 +11,13 @@ const baseConfig = {
 
 const test1 = {
 	inputFolder: 'test/icons',
-	output: 'test/output/sprite-test1.svg',
-	svgo: false
+	output: 'test/output/sprite-test1.svg'
 }
 
 const test2 = {
 	inputFolder: 'test/icons',
 	output: 'test/output/sprite-test2.svg',
-	svgo: {
-		plugins: [{
-			removeViewBox: false
-		}]
-	}
+	inline: false
 }
 
 export default [
