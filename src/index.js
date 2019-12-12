@@ -1,5 +1,5 @@
-import fs from 'fs'
-import path from 'path'
+import fs from 'fs-extra';
+import path from 'path';
 import svgstore from 'svgstore';
 
 export default function svgicons(options = {}) {
@@ -17,6 +17,7 @@ export default function svgicons(options = {}) {
                 let code = fs.readFileSync(filepath, {encoding: 'utf-8'});
                 sprites.add(svgid, code)
             }
+            fs.ensureFileSync(path.resolve(output));
             fs.writeFileSync(path.resolve(output), sprites.toString({inline:!!options.inline}));
         }
     }
