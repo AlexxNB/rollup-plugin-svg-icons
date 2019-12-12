@@ -1,4 +1,4 @@
-import svgicons from './../dist/index.esm.min.js';
+import svgicons from './../dist/index.mjs';
 
 const baseConfig = {
 	input: 'test/main.js',
