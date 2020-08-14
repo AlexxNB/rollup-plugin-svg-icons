@@ -33,7 +33,7 @@
   "devDependencies": {
     "open-cli": "^5.0.0",
     "rollup": "^1.27.11",
-    "rollup-plugin-terser": "^5.1.3",
+    "rollup-plugin-terser": "^7.0.0",
     "sirv-cli": "^0.4.5"
   },
   "dependencies": {
